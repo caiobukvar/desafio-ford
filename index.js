@@ -15,7 +15,6 @@ const rotas = [
     }
 ];
 
-
 // regioes definidas pela equipe:
 const novasRotas = [
     {
@@ -31,6 +30,7 @@ const novasRotas = [
         "entrada": regioes[1]
     }
 ];
+
 let contador = 0;
 
 for (const rota of novasRotas) {
@@ -41,7 +41,6 @@ for (const rota of novasRotas) {
     rotas.push(rota);
     contador = contador + 1;
 }
-
 
 console.log("Novas rotas:", novasRotas);
 console.log(`Foi necessário a criação de ${contador} novas rotas.`)
