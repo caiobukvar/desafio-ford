@@ -15,7 +15,9 @@ const rotas = [
     }
 ];
 
+// sabendo-se que 3 é o mínimo de rotas (3! = 6 rotas, já existem 3 rotas, logo resta adicionar 3)
 // regioes definidas pela equipe:
+
 const novasRotas = [
     {
         "saida": regioes[0],
@@ -33,6 +35,7 @@ const novasRotas = [
 
 let contador = 0;
 
+// para cada rota, adicionar no array de rotas já existentes e adicionar um ao contador
 for (const rota of novasRotas) {
     if (rota.saida === rota.entrada) {
         console.log("nao é possível criar a rota")
